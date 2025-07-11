@@ -1,34 +1,90 @@
-*{
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  background-color: black;
-  color: #fff;
-  overflow:hidden;
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    overflow: hidden;
 }
 
-.main{
+.main {
     display: flex;
     height: 100vh;
+    padding: 0.2rem;
 }
 
-.sidebar{
-    background-color:#121212;
-    width:340px;
-    border-radius:1rem; /*16px*/
+.sidebar {
+    background-color: rgb(34, 230, 103);
+    width: 340px;
+    border-radius: 1rem;
+    /*16px*/
 }
 
-.main-content{
+.main-content {
     background-color: #121212;
-    flex:1;
-    border-radius:1rem; /*16px*/
+    flex: 1;
+    border-radius: 1rem;
+    /*16px*/
     overflow: auto;
 }
 
-.music-player{
-    background-color: black;
+.music-player {
+    background-color: rgb(0, 0, 0);
     position: fixed;
-    bottom: 0px;
-    width:100%;
+    bottom: 0;
+    width: 100%;
     height: 72PX;
+}
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.5rem;
+}
+
+.nav-class {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-class:hover {
+    opacity: 1;
+}
+
+.nav-class i {
+    font-size: 1rem;
+}
+
+.nav-class a {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    height: 1.25 rem;
+    width:1.25rem;
 }
